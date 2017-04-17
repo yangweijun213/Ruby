@@ -1,0 +1,26 @@
+#doc
+watir project: https://github.com/watir/watir
+watir API - http://www.rubydoc.info/gems/watir/Watir/Browser
+
+#software
+Selenium-webdriver 3.3.0
+watir 6.2.1 (支持selenium3)
+ruby 2.3
+gem 2.6.7
+
+# update gem 2.6.7
+gem install --local D:\tool\Test\Ruby_Watir\gem\rubygems-update-2.6.7.gem
+
+# install watir
+gem install watir
+
+# download webdriver and copy them to ruby\bin
+IEDriverServer_x64_3.3.0, 下载地址： http://selenium-release.storage.googleapis.com/index.html
+chromedriver 下载地址： http://chromedriver.storage.googleapis.com/index.html
+Firefox driver: http://www.seleniumhq.org/ (Selenium-webdriver 3.3.0 支持 firefox48.0和之后版本)
+
+复制IEDriverServer.exe放在C:\Ruby23\bin
+复制 geckodriver.exe到放在C:\Ruby23\bin
+复制 chromedriver.exee放在C:\Ruby23\bin
+
+

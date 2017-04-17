@@ -1,0 +1,3 @@
+需要安装 net-ssh, net-scp
+# gem install net-ssh
+# gem install net-scp

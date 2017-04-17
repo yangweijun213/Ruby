@@ -1,0 +1,10 @@
+#doc
+watir-classic project: https://github.com/watir/watir-classic
+watir-classic API - http://www.rubydoc.info/gems/watir-classic
+
+#software
+watir-classic 4.3.0
+ruby 2.3 (gem install watir-classic #目前还不支持64位的Ruby所以安装的Ruby必须是32位的才能使用)
+httpwatch 9.4
+
+

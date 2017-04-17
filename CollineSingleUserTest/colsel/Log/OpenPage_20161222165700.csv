@@ -1,0 +1,66 @@
+Started,Page Title,Page ID,Device Name,User Name,Time,Sent,Received,Method,Result,Type,URL,Render Start,DOM Load,HTTP Load,Page Load,Network,Cache Read
+,Login,1,SHA-LRI-PC-155,jeff yang,0.456,2211,3139,,,,,,,0.456,,,
+2016-12-22 16:56:56.472000,,1,SHA-LRI-PC-155,jeff yang,0.299,317,2017,GET,200,html,http://54.193.33.252:8080/colline/,,,,,0.294,
+2016-12-22 16:56:56.776000,,1,SHA-LRI-PC-155,jeff yang,0.143,448,281,GET,304,css,http://54.193.33.252:8080/colline/common/styles/content.css,,,,,0.140,0.001
+2016-12-22 16:56:56.777000,,1,SHA-LRI-PC-155,jeff yang,0.143,475,281,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/browserVer.js,,,,,0.142,0.001
+2016-12-22 16:56:56.778000,,1,SHA-LRI-PC-155,jeff yang,0.149,485,281,GET,304,,http://54.193.33.252:8080/colline/img/app/dyn_logo.img,,,,,0.142,0.007
+2016-12-22 16:56:56.779000,,1,SHA-LRI-PC-155,jeff yang,0.149,486,279,GET,304,gif,http://54.193.33.252:8080/colline/img/spl/firmtechlog.gif,,,,,0.142,0.007
+,http://54.193.33.252:8080/colline/index.do?j_winname=colline442922773961367900a,2,SHA-LRI-PC-155,jeff yang,1.192,13476,88585,,,,,0.007,,1.192,,,
+2016-12-22 16:56:56.927000,,2,SHA-LRI-PC-155,jeff yang,0.147,407,390,GET,302,Redirect to http://54.193.33.252:8080/colline/index.do?j_winname=colline442922773961367900a,http://54.193.33.252:8080/colline/index.do?j_winname=colline442922773961367900a,,,,,0.146,
+2016-12-22 16:56:57.073000,,2,SHA-LRI-PC-155,jeff yang,0.549,407,33453,GET,200,html,http://54.193.33.252:8080/colline/index.do?j_winname=colline442922773961367900a,,,,,0.548,
+2016-12-22 16:56:57.367000,,2,SHA-LRI-PC-155,jeff yang,0.142,518,282,GET,304,javascript,http://54.193.33.252:8080/colline/lrsux/lrsux/lrsux.min.js,,,,,0.140,0.001
+2016-12-22 16:56:57.368000,,2,SHA-LRI-PC-155,jeff yang,0.143,499,281,GET,304,css,http://54.193.33.252:8080/colline/lrsux/lrsux-ui/lrsux-ui.min.css,,,,,0.142,< 0.001
+2016-12-22 16:56:57.368000,,2,SHA-LRI-PC-155,jeff yang,0.143,524,282,GET,304,javascript,http://54.193.33.252:8080/colline/lrsux/lrsux-ui/lrsux-ui.min.js,,,,,0.141,0.001
+2016-12-22 16:56:57.369000,,2,SHA-LRI-PC-155,jeff yang,0.281,513,278,GET,304,css,http://54.193.33.252:8080/colline/common/styles/collineCssTheme/topBar_colline.css,,,,,0.279,0.001
+2016-12-22 16:56:57.370000,,2,SHA-LRI-PC-155,jeff yang,0.281,491,280,GET,304,css,http://54.193.33.252:8080/colline/common/styles/layout.css,,,,,0.141,< 0.001
+2016-12-22 16:56:57.370000,,2,SHA-LRI-PC-155,jeff yang,0.289,496,280,GET,304,css,http://54.193.33.252:8080/colline/common/styles/application.css,,,,,0.148,< 0.001
+2016-12-22 16:56:57.371000,,2,SHA-LRI-PC-155,jeff yang,0.289,493,281,GET,304,css,http://54.193.33.252:8080/colline/common/styles/content.css,,,,,0.147,0.001
+2016-12-22 16:56:57.371000,,2,SHA-LRI-PC-155,jeff yang,0.290,494,279,GET,304,css,http://54.193.33.252:8080/colline/common/styles/actionmenu.css,,,,,0.290,< 0.001
+2016-12-22 16:56:57.372000,,2,SHA-LRI-PC-155,jeff yang,0.394,515,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/layout.js,,,,,0.142,0.001
+2016-12-22 16:56:57.372000,,2,SHA-LRI-PC-155,jeff yang,0.421,520,281,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/layout-ext.js,,,,,0.142,0.001
+2016-12-22 16:56:57.372000,,2,SHA-LRI-PC-155,jeff yang,0.420,520,281,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/browserVer.js,,,,,0.140,0.001
+2016-12-22 16:56:57.373000,,2,SHA-LRI-PC-155,jeff yang,0.428,515,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/cookie.js,,,,,0.141,< 0.001
+2016-12-22 16:56:57.373000,,2,SHA-LRI-PC-155,jeff yang,0.712,498,47805,GET,200,javascript,http://54.193.33.252:8080/colline/dwr/engine.js,,,,,0.425,
+2016-12-22 16:56:57.374000,,2,SHA-LRI-PC-155,jeff yang,0.431,496,250,GET,304,javascript,http://54.193.33.252:8080/colline/dwr/util.js,,,,,0.142,0.001
+2016-12-22 16:56:57.374000,,2,SHA-LRI-PC-155,jeff yang,0.536,429,693,GET,200,javascript,http://54.193.33.252:8080/colline/dwr/interface/SSOHelper.js,,,,,0.144,
+2016-12-22 16:56:57.375000,,2,SHA-LRI-PC-155,jeff yang,0.562,553,279,GET,304,gif,http://54.193.33.252:8080/colline/img/app/collineLogoTheme/colline_PBL_logo.gif,,,,,0.141,0.002
+2016-12-22 16:56:57.375000,,2,SHA-LRI-PC-155,jeff yang,0.563,557,280,GET,304,png,http://54.193.33.252:8080/colline/img/app/collineLogoTheme/colline_topBar_logo.png,,,,,0.142,0.002
+2016-12-22 16:56:57.375000,,2,SHA-LRI-PC-155,jeff yang,0.570,489,280,GET,304,css,http://54.193.33.252:8080/colline/common/styles/menu.css,,,,,0.144,< 0.001
+2016-12-22 16:56:57.376000,,2,SHA-LRI-PC-155,jeff yang,0.573,526,281,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/menuActionScript.js,,,,,0.144,< 0.001
+2016-12-22 16:56:57.376000,,2,SHA-LRI-PC-155,jeff yang,0.677,518,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/cm_addins.js,,,,,0.142,0.001
+2016-12-22 16:56:57.617000,,2,SHA-LRI-PC-155,jeff yang,0.463,535,281,GET,304,,http://54.193.33.252:8080/colline/img/app/dyn_wallpaper.img,,,,,0.142,0.002
+2016-12-22 16:56:57.617000,,2,SHA-LRI-PC-155,jeff yang,0.465,453,390,GET,302,Redirect to http://54.193.33.252:8080/colline/index.do?j_winname=colline999999999999999999a,http://54.193.33.252:8080/colline/organisation/getLogo.do?id=197911,,,,,0.146,
+2016-12-22 16:56:57.618000,,2,SHA-LRI-PC-155,jeff yang,0.470,524,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/tablesortcommon.js,,,,,0.140,0.001
+2016-12-22 16:56:57.618000,,2,SHA-LRI-PC-155,jeff yang,0.476,521,278,GET,304,gif,http://54.193.33.252:8080/colline/img/spacer.gif,,,,,0.143,0.001
+2016-12-22 16:56:58.082000,,2,SHA-LRI-PC-155,jeff yang,0.037,465,0,GET,(Aborted),,http://54.193.33.252:8080/colline/index.do?j_winname=colline999999999999999999a,,,,,0.036,
+,http://54.193.33.252:8080/colline/index.do?j_winname=colline717561560304334800a,3,SHA-LRI-PC-155,jeff yang,1.644,15115,133557,,,,,0.828,1.292,1.644,1.685,,
+2016-12-22 16:56:58.119000,,3,SHA-LRI-PC-155,jeff yang,0.147,452,390,GET,302,Redirect to http://54.193.33.252:8080/colline/index.do?j_winname=colline717561560304334800a,http://54.193.33.252:8080/colline/index.do?j_winname=colline717561560304334800a,,,,,0.146,
+2016-12-22 16:56:58.265000,,3,SHA-LRI-PC-155,jeff yang,0.585,452,33453,GET,200,html,http://54.193.33.252:8080/colline/index.do?j_winname=colline717561560304334800a,,,,,0.584,
+2016-12-22 16:56:58.605000,,3,SHA-LRI-PC-155,jeff yang,0.144,518,282,GET,304,javascript,http://54.193.33.252:8080/colline/lrsux/lrsux/lrsux.min.js,,,,,0.141,0.002
+2016-12-22 16:56:58.605000,,3,SHA-LRI-PC-155,jeff yang,0.143,499,281,GET,304,css,http://54.193.33.252:8080/colline/lrsux/lrsux-ui/lrsux-ui.min.css,,,,,0.140,0.002
+2016-12-22 16:56:58.606000,,3,SHA-LRI-PC-155,jeff yang,0.143,524,282,GET,304,javascript,http://54.193.33.252:8080/colline/lrsux/lrsux-ui/lrsux-ui.min.js,,,,,0.140,0.002
+2016-12-22 16:56:58.606000,,3,SHA-LRI-PC-155,jeff yang,0.144,513,278,GET,304,css,http://54.193.33.252:8080/colline/common/styles/collineCssTheme/topBar_colline.css,,,,,0.141,0.002
+2016-12-22 16:56:58.607000,,3,SHA-LRI-PC-155,jeff yang,0.288,491,280,GET,304,css,http://54.193.33.252:8080/colline/common/styles/layout.css,,,,,0.287,0.001
+2016-12-22 16:56:58.607000,,3,SHA-LRI-PC-155,jeff yang,0.289,496,280,GET,304,css,http://54.193.33.252:8080/colline/common/styles/application.css,,,,,0.145,0.002
+2016-12-22 16:56:58.607000,,3,SHA-LRI-PC-155,jeff yang,0.290,493,281,GET,304,css,http://54.193.33.252:8080/colline/common/styles/content.css,,,,,0.145,0.003
+2016-12-22 16:56:58.608000,,3,SHA-LRI-PC-155,jeff yang,0.293,494,279,GET,304,css,http://54.193.33.252:8080/colline/common/styles/actionmenu.css,,,,,0.147,0.001
+2016-12-22 16:56:58.608000,,3,SHA-LRI-PC-155,jeff yang,0.289,515,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/layout.js,,,,,0.144,0.002
+2016-12-22 16:56:58.609000,,3,SHA-LRI-PC-155,jeff yang,0.388,520,281,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/layout-ext.js,,,,,0.144,0.001
+2016-12-22 16:56:58.609000,,3,SHA-LRI-PC-155,jeff yang,0.439,520,281,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/browserVer.js,,,,,0.149,0.001
+2016-12-22 16:56:58.609000,,3,SHA-LRI-PC-155,jeff yang,0.435,515,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/cookie.js,,,,,0.145,0.001
+2016-12-22 16:56:58.610000,,3,SHA-LRI-PC-155,jeff yang,0.725,498,47805,GET,200,javascript,http://54.193.33.252:8080/colline/dwr/engine.js,,,,,0.436,
+2016-12-22 16:56:58.610000,,3,SHA-LRI-PC-155,jeff yang,0.442,496,250,GET,304,javascript,http://54.193.33.252:8080/colline/dwr/util.js,,,,,0.148,0.004
+2016-12-22 16:56:58.610000,,3,SHA-LRI-PC-155,jeff yang,0.439,429,693,GET,200,javascript,http://54.193.33.252:8080/colline/dwr/interface/SSOHelper.js,,,,,0.148,
+2016-12-22 16:56:58.611000,,3,SHA-LRI-PC-155,jeff yang,0.530,553,279,GET,304,gif,http://54.193.33.252:8080/colline/img/app/collineLogoTheme/colline_PBL_logo.gif,,,,,0.143,< 0.001
+2016-12-22 16:56:58.611000,,3,SHA-LRI-PC-155,jeff yang,0.579,557,280,GET,304,png,http://54.193.33.252:8080/colline/img/app/collineLogoTheme/colline_topBar_logo.png,,,,,0.146,< 0.001
+2016-12-22 16:56:58.611000,,3,SHA-LRI-PC-155,jeff yang,0.586,489,280,GET,304,css,http://54.193.33.252:8080/colline/common/styles/menu.css,,,,,0.145,0.002
+2016-12-22 16:56:58.612000,,3,SHA-LRI-PC-155,jeff yang,0.583,526,281,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/menuActionScript.js,,,,,0.143,0.001
+2016-12-22 16:56:58.612000,,3,SHA-LRI-PC-155,jeff yang,0.584,518,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/cm_addins.js,,,,,0.141,0.001
+2016-12-22 16:56:58.837000,,3,SHA-LRI-PC-155,jeff yang,0.452,535,281,GET,304,,http://54.193.33.252:8080/colline/img/app/dyn_wallpaper.img,,,,,0.144,0.003
+2016-12-22 16:56:58.838000,,3,SHA-LRI-PC-155,jeff yang,0.498,453,390,GET,302,Redirect to http://54.193.33.252:8080/colline/index.do?j_winname=colline999999999999999999a,http://54.193.33.252:8080/colline/organisation/getLogo.do?id=197911,,,,,0.145,
+2016-12-22 16:56:58.838000,,3,SHA-LRI-PC-155,jeff yang,0.498,524,280,GET,304,javascript,http://54.193.33.252:8080/colline/common/script/tablesortcommon.js,,,,,0.140,0.001
+2016-12-22 16:56:58.839000,,3,SHA-LRI-PC-155,jeff yang,0.500,521,278,GET,304,gif,http://54.193.33.252:8080/colline/img/spacer.gif,,,,,0.141,0.001
+2016-12-22 16:56:59.336000,,3,SHA-LRI-PC-155,jeff yang,0.072,465,0,GET,(Aborted),,http://54.193.33.252:8080/colline/index.do?j_winname=colline999999999999999999a,,,,,0.070,
+2016-12-22 16:56:59.390000,,3,SHA-LRI-PC-155,jeff yang,0.163,525,278,GET,304,gif,http://54.193.33.252:8080/colline/img/menu_arrow.gif,,,,,0.160,0.002
+2016-12-22 16:56:59.400000,,3,SHA-LRI-PC-155,jeff yang,0.152,534,279,GET,304,jpeg,http://54.193.33.252:8080/colline/img/app/bottom_divider.jpg,,,,,0.149,0.002
+2016-12-22 16:56:59.408000,,3,SHA-LRI-PC-155,jeff yang,0.355,490,44415,GET,200,jpeg,http://54.193.33.252:8080/colline/organisation/getLogo.do?id=197911&j_winname=colline717561560304334800a,,,,,0.354,
