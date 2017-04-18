@@ -1,0 +1,10 @@
+1. 执行任务ready_for_the_day， 在cmd, D:\workspace\Ruby\RubyTest\ruby233\06_rake>rake ready_for_the_day
+Turned off alarm. Would have liked 5 more minutes, though.
+Brushed teeth.
+Showered.
+Shaved.
+Made 2 cups of coffee. Shakes are gone.
+Dog walked.
+Ready for the day!
+
+2. 执行任务TC_MyTest

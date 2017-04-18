@@ -1,0 +1,2 @@
+# 需要安装gem oci8
+gem install oci8

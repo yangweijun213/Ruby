@@ -1,4 +1,8 @@
 引入Page对象来封装不同的页面，引入用户角色管理不同的用户行为，再引入Module来组织不同的功能模块，最后重构成了一个简单实用的自动化测试框架
-	- page封装，封装不同的页面
-	- Role封装， 基于封装的页面，然后将不同角色和他们的行为进行封装
-	- Module封装，对不同的功能进行封装
+	- page封装，封装不同的页面 - BaiduPage.rb, TestPageObject.rb
+	- Role封装， 基于封装的页面，然后将不同角色和他们的行为进行封装 - BaiduPage.rb, User.rb, TestRole.rb
+	- Module封装，对不同的功能进行封装 - BaiduPage.rb, User2.rb, SearchBehaviour.rb, TestModule.rb
+	
+
+
+
