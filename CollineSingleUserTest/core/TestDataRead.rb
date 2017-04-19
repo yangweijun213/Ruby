@@ -1,13 +1,7 @@
 require 'win32ole'
 
-class Common
-  
-  # 转换时间格式   %Y%m%d%H%M%S
-  def getStrftime()
-      time = Time.new
-      return time.strftime("%Y%m%d%H%M%S")
-  end
-  
+class TestDataRead
+
   def getExcelData()
      excel = WIN32OLE.new('Excel.Application')
      excel.visible = true

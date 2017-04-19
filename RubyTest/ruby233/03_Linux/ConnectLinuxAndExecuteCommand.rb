@@ -6,11 +6,11 @@
 require 'net/ssh'
 require 'net/scp'
 
-HOST = '172.20.20.90'
-USER = 'test'
-PASS = 'pst@1234'
+host = '172.20.20.90'
+user = 'test'
+pass = 'pst@1234'
 
-Net::SSH.start( HOST, USER, :password => PASS ) do |ssh|
+Net::SSH.start( host, user, :password => pass ) do |ssh|
     #执行shell
     result = ssh.exec!"./jeff/Shell/testSet.sh"
    
