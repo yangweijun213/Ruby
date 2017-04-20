@@ -1,11 +1,13 @@
 require 'win32ole'
+require 'rexml/document'
 
-class TestDataRead
 
-  def getExcelData()
+class TestDataUtils
+  #解析excel
+  def getExcelData(excelpath)
      excel = WIN32OLE.new('Excel.Application')
      excel.visible = true
-     workbook = excel.Workbooks.Open('D:\workspace\Automation_PST\Automation\Ruby_Watir_HttpWatch\CollineSingleUserTest\colbiz\TestData\Login.xlsx')
+     workbook = excel.Workbooks.Open('#{excelpath}')
      worksheet = workbook.Worksheets(1) #定位到第一个sheet
      worksheet.Select
      
@@ -22,6 +24,18 @@ class TestDataRead
      excel.Quit
      
      return data
+   end
+   
+   #解析xml
+   def getXMLData (root,element,subelement,xmlpath)
+     
+     include REXML
+     xmlfile = File.new("xmlpath") #默认是在项目RubyTest下
+     xmldoc = Document.new(xmlfile)
+  
+     xmldoc.elements.each("#{root}/#{element}/#{subelement}") {
+        |e| return e
+     }
    end
     
 end

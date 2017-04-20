@@ -1,0 +1,27 @@
+<library shelf="Recent Acquisitions">   
+<section name="Ruby">   
+<book isbn="0672328844">   
+<title>The Ruby Way</title>   
+<author>Hal Fulton</author>   
+<description>   
+Second edition. The book you are now reading.   
+Ain't recursion grand?   
+</description>   
+</book>   
+</section>   
+<section name="Space">   
+<book isbn="0684835509">   
+<title>The Case for Mars</title>   
+<author>Robert Zubrin</author>   
+<description>Pushing toward a second home for the human   
+race.   
+</description>   
+</book>   
+<book isbn="074325631X">   
+<title>First Man: The Life of Neil A. Armstrong</title>   
+<author>James R. Hansen</author>   
+<description>Definitive biography of the first man on   
+the moon. </description>   
+</book>   
+</section>   
+</library> 

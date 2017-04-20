@@ -1,54 +1,57 @@
 require 'rubygems'
 require 'win32ole'
 require 'watir-classic'  #watir和watir-classic不能同时存在
+require 'test/unit'
 
 #加载默认路径引入公共类
-require File.expand_path('../../utility/lib/Common',__FILE__)
-require File.expand_path('../../utility/lib/Logger',__FILE__)
+require File.expand_path('../../utility/StringUtils',__FILE__)
+require File.expand_path('../../utility/LogUtils',__FILE__)
 
 #define class Login
-class Login
-  def initialize (transactionName,httpWatch_report,httpwatch_fieldList)
+class Login < Test::Unit::TestCase
+  def initialize (browser,transactionName,httpWatch_report,httpwatch_fieldList)
+    @browser = browser
     @transactionName = transactionName
     @httpWatch_report = httpWatch_report
     @httpwatch_fieldList = httpwatch_fieldList
   end
 
-  #define method start
+  # test initial
   def start ()
-    $ie = Watir::IE.new
     $logger = Logger.new().getLogger()
-  end
-
-  #define method openPage
-  def openPage (url)
-
+    
     # Attach HttpWatch
     $control = WIN32OLE.new('HttpWatch.Controller')
-    $plugin = $control.IE.Attach($ie.ie)
+    $plugin = $control.IE.Attach($browser.ie)
+  end
+
+  #open Page
+  def openPage (url,checkpoint)
     #Clear the HttpWatch Log
     $plugin.Clear()
     # Start recording
     $plugin.Record()
+    
+    #open page
+    $browser.goto("#{url}")
 
-    $ie.goto("#{url}")
-
-    # Page check
-    if $ie.text.include?("Login")
-      $logger.info("#{@transactionName}: Test Passed. Found the test string: 'Login '.Actual Results match Expected Results.")
+    # Page check - checkpoint "login"
+    assert_equal( "test", checkpoint)
+    if $browser.text.include?("#{checkpoint}") 
+      $logger.info("#{@transactionName}: Test Passed. Found the test string: '#{checkpoint}'.Actual Results match Expected Results.")
     else
-      $logger.error("#{@transactionName}: Test Failure")
-      $ie.screenshot.save "#{@transactionName}_#Common.new().getStrftime().png"
+      $logger.error("#{@transactionName}: Test Failure, can't find checkpoint '#{checkpoint}'")
+      $browser.screenshot.save "#{@transactionName}_#{StringUtils.new().getStrftime()}.png"
     end
 
     # Stop recording
     $plugin.Stop()
     #Exports a specified list of data fields in CSV (Comma-Separated Values) format
-    $plugin.Log.ExportFieldsAsCSV("#{@httpWatch_report}\\#{@transactionName}_#{Common.new().getStrftime()}.csv","#{@httpwatch_fieldList}")
+    $plugin.Log.ExportFieldsAsCSV("#{@httpWatch_report}\\#{@transactionName}_#{StringUtils.new().getStrftime()}.csv","#{@httpwatch_fieldList}")
   end
 
-  #define method login
-  def login (uname,password)
+  #login to home page
+  def login (uname,password,checkpoint)
 
     #Clear the HttpWatch Log
     $plugin.Clear()
@@ -56,30 +59,31 @@ class Login
     $plugin.Record()
 
     #Setting a text field
-    $ie.text_field(:name, "j_username").set "#{uname}"
-    $ie.text_field(:name, "j_password").set "#{password}"
+    $browser.text_field(:name, "j_username").set "#{uname}"
+    $browser.text_field(:name, "j_password").set "#{password}"
 
     #Clicking a button
     sleep(2)
-    $ie.button(:name, "submit").click
+    $browser.button(:name, "submit").click
 
-    if $ie.title == "Session already exists"
+    if $browser.title == "Session already exists"
       #Clicking a button Continue
-      $ie.button(:name, "continue").click
+      $browser.button(:name, "continue").click
     end
 
-    #Checking for text in a page
-    if $ie.text.include?("Home")
-      $logger.info("#{@transactionName}: Test Passed. Found the test string: 'Home '.Actual Results match Expected Results.")
+    #Checking for text in a page - checkpoint "Home"
+    assert_equal( "Home", checkpoint)
+    if $browser.text.include?("Home")
+      $logger.info("#{@transactionName}: Test Passed. Found the test string: '#{checkpoint} '.Actual Results match Expected Results.")
     else
-      $logger.info("#{@transactionName}: Test Failure")
-      $ie.screenshot.save "#{@transactionName}_#Common.new().getStrftime().png"
+      $logger.info("#{@transactionName}: Test Failure,not found checkpoint '#{checkpoint}'")
+      $browser.screenshot.save "#{@transactionName}_#{StringUtils.new().getStrftime()}.png"
     end
 
     # Stop recording
     $plugin.Stop()
     #Exports a specified list of data fields in CSV (Comma-Separated Values) format
-    $plugin.Log.ExportFieldsAsCSV("#{@httpWatch_report}\\#{@transactionName}_#{Common.new().getStrftime()}.csv","#{@httpwatch_fieldList}")
+    $plugin.Log.ExportFieldsAsCSV("#{$httpWatch_report}\\#{@transactionName}_#{StringUtils.new().getStrftime()}.csv","#{$httpwatch_fieldList}")
 
   end
 end
