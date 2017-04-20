@@ -7,37 +7,36 @@ require 'test/unit'
 require File.expand_path('../../../../core/utils/StringUtils',__FILE__)
 require File.expand_path('../../../../core/utils/LogUtils',__FILE__)
 
-#define class Login
-class Login 
-  def initialize (browser,url,uname,pwd)
+
+#define class Agreement Search
+class AgreementSearchCriteria
+  def initialize (browser)
     @browser = browser
-    @url = url
-    @uname = uname
-    @pwd = pwd
-
   end
-
+  
   # test initial
   def start ()
-    $logger = LogUtil.new().getlogger($auto_log)
-    
+    $logger = LogUtil.new().getlogger(@auto_log)
     # Attach HttpWatch
     $control = WIN32OLE.new('HttpWatch.Controller')
     $plugin = $control.IE.Attach(@browser.ie)
   end
-
-  #open Page
-  def open_page (transaction_name,checkpoint)
-    #Clear the HttpWatch Log
+  
+  #go to Colline Agreement Search
+  def goto_agreement_search(transaction_name,checkpoint)
     $plugin.Clear()
     # Start recording
     $plugin.Record()
     
-    #open page
-    @browser.goto("#{@url}")
+    @browser.div(:text => "Collateral", :id => "oM_m6").fire_event('onmouseover')
+    sleep(1)
+    @browser.div(:text => "Agreement Details").fire_event('onmouseover')
+    sleep(1)
+    @browser.div(:text => "Agreement Search").click
 
-    # Page check - checkpoint "login"
-    if @browser.text.include?("#{checkpoint}") 
+    # Page check - "Collateral - Agreement Search"
+    sleep(10)
+    if @browser.text.include?("#{checkpoint}")
       $logger.info("#{transaction_name}: Test Passed. Found the test string: '#{checkpoint}'.Actual Results match Expected Results.")
     else
       $logger.error("#{transaction_name}: Test Failure, can't find checkpoint '#{checkpoint}'")
@@ -50,34 +49,23 @@ class Login
     $plugin.Log.ExportFieldsAsCSV("#{$httpWatch_report}\\#{transaction_name}_#{StringUtils.new().getstrftime()}.csv","#{$httpwatch_fieldList}")
   end
 
-  #login to home page
-  def login (transaction_name,checkpoint)
-
+  #agreement Search By SystemId
+  def agreement_search_by_system_id(transaction_name,checkpoint,systemid)
     #Clear the HttpWatch Log
     $plugin.Clear()
     # Start recording
     $plugin.Record()
 
-    #Setting a text field
-    @browser.text_field(:name, "j_username").set "#{@uname}"
-    @browser.text_field(:name, "j_password").set "#{@pwd}"
-    
-
-    #Clicking a button
+    @browser.text_field(:id => 'systemId').set "#{systemid}"
     sleep(2)
-    @browser.button(:name, "submit").click
-    
+    @browser.button(:id, 'submit').click
 
-    if @browser.title == "Session already exists"
-      #Clicking a button Continue
-      @browser.button(:name, "continue").click
-    end
-
-    #Checking for text in a page - checkpoint "Home"
+    # Page check - "12101"
+    sleep(5)
     if @browser.text.include?("#{checkpoint}")
-      $logger.info("#{transaction_name}: Test Passed. Found the test string: '#{checkpoint} '.Actual Results match Expected Results.")
+      $logger.info("#{transaction_name}: Test Passed. Found the test string: '#{checkpoint}'.Actual Results match Expected Results.")
     else
-      $logger.info("#{transaction_name}: Test Failure,not found checkpoint '#{checkpoint}'")
+      $logger.error("#{transaction_name}: Test Failure, can't find checkpoint '#{checkpoint}'")
       @browser.screenshot.save "#{$auto_screenshot}\\#{transaction_name}_#{StringUtils.new().getstrftime()}.png"
     end
 
@@ -85,7 +73,6 @@ class Login
     $plugin.Stop()
     #Exports a specified list of data fields in CSV (Comma-Separated Values) format
     $plugin.Log.ExportFieldsAsCSV("#{$httpWatch_report}\\#{transaction_name}_#{StringUtils.new().getstrftime()}.csv","#{$httpwatch_fieldList}")
-
   end
-end
 
+end

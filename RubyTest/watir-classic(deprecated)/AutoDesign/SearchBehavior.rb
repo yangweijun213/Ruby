@@ -7,6 +7,7 @@
 require 'rubygems'    
 require 'watir-classic' 
 
+require File.join(File.dirname(__FILE__), "BaiduPage")
 
 module SearchBehavior
   def visit_baidu

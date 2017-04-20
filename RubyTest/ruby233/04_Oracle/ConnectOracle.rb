@@ -1,4 +1,5 @@
 # 使用rubby-oci8 www.rubydoc.info/gems/ruby-oci8/2.2.2
+# ref http://blog.csdn.net/yangcs2009/article/details/10097873
 # ruby-oci8 is a ruby interface for Oracle using OCI8 API. It is available with Oracle 10g or later including Oracle Instant Client.
 # gem install ruby-oci8
 

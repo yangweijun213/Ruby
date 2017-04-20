@@ -1,9 +1,9 @@
 require 'net/ssh'
 require 'net/scp'
 
-class Linux
+class LinuxUtils
    
-  def connectLinuxServer(host,user,pass)
+  def connect_linux_server(host,user,pass)
         
     Net::SSH.start( host, user, :password => pass ) do |ssh|
         #执行shell

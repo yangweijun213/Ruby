@@ -1,10 +1,11 @@
+# 测试 - colline login and agreement id search
 require 'rubygems'
 require 'win32ole'
 require 'watir-classic'  #watir和watir-classic不能同时存在
 
 ie = Watir::IE.new
-ie.goto('http://54.193.33.252:8080/colline/')
-ie.text_field(:name, 'j_username').set('sa3')
+ie.goto('http://172.20.20.90:8080/colline/')
+ie.text_field(:name, 'j_username').set('sa')
 ie.text_field(:id, 'j_password').set('password')
 ie.button(:name, 'submit').click
 sleep(2)

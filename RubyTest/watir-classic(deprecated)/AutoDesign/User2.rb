@@ -6,8 +6,8 @@
 
 require 'rubygems'
 require 'watir-classic'
+
 require File.join(File.dirname(__FILE__), "SearchBehavior")
-require File.join(File.dirname(__FILE__), "BaiduPage")
 
 class User2
   def initialize

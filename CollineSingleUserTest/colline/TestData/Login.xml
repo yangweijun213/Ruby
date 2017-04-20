@@ -1,5 +1,7 @@
+<colline>
 <login>
-	<url>http://54.193.33.252:8080/colline/</url>
-	<username>sa4</username>
+	<url>http://172.20.20.90:8080/colline/</url>
+	<username>sa</username>
 	<password>password</password>
 </login>
+</colline>

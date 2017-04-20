@@ -1,12 +1,11 @@
 require 'logger'
-require File.dirname(__FILE__) + '/Common'
 
 class LogUtil
   
-  def getLogger(logFileName)
+  def getlogger(log_filename)
   
     #Create a logger, daily log
-    logger = Logger.new("#{logFileName}","daily")
+    logger = Logger.new("#{log_filename}","daily")
     # log level: INFO
     logger.level = Logger::INFO
     return logger

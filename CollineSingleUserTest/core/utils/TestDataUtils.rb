@@ -1,13 +1,13 @@
 require 'win32ole'
 require 'rexml/document'
-
+include REXML
 
 class TestDataUtils
   #解析excel
-  def getExcelData(excelpath)
+  def get_exceldata(excelpath)
      excel = WIN32OLE.new('Excel.Application')
      excel.visible = true
-     workbook = excel.Workbooks.Open('#{excelpath}')
+     workbook = excel.Workbooks.Open("#{excelpath}")
      worksheet = workbook.Worksheets(1) #定位到第一个sheet
      worksheet.Select
      
@@ -27,14 +27,13 @@ class TestDataUtils
    end
    
    #解析xml
-   def getXMLData (root,element,subelement,xmlpath)
+   def get_xmldata (element,xmlpath)
      
-     include REXML
-     xmlfile = File.new("xmlpath") #默认是在项目RubyTest下
+     xmlfile = File.new("#{xmlpath}") #默认是在项目RubyTest下
      xmldoc = Document.new(xmlfile)
   
-     xmldoc.elements.each("#{root}/#{element}/#{subelement}") {
-        |e| return e
+     xmldoc.elements.each("#{element}") {
+        |e| return e.text
      }
    end
     
