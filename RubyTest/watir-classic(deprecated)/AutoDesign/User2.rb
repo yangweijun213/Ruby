@@ -10,8 +10,9 @@ require 'watir-classic'
 require File.join(File.dirname(__FILE__), "SearchBehavior")
 
 class User2
-  def initialize
-    @browser = Watir::IE.new
+  def initialize (browser)
+    @browser = browser
+    @page = BaiduPage.new(@browser)
   end
  
  include SearchBehavior

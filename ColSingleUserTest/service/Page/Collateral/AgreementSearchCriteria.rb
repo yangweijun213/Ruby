@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'win32ole'
 require 'watir-classic'  #watir和watir-classic不能同时存在
-require 'test/unit'
 
 #加载默认路径引入公共类
 require File.expand_path('../../../../core/utils/StringUtils',__FILE__)

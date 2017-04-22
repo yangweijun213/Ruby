@@ -10,10 +10,12 @@ class BaiduPage
   
   #定义构造方法  initialize
   def initialize (browser)
-    #@browser= Watir::IE.new
-    #将browser对象传给实例变量 @browser
     @browser = browser
-    @browser.goto("http://www.baidu.com/") 
+  end
+  
+  #打开页面
+  def open_page
+    @browser.goto("http://www.baidu.com/")
   end
   
   #定义方法search
@@ -30,6 +32,11 @@ class BaiduPage
     else 
     puts " Test Failed! Could not find: #{text}." 
     end
+  end
+  
+  #关闭
+  def close_browser
+    @browser.close
   end
   
 end
