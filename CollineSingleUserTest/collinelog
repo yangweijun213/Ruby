@@ -1,9 +1,0 @@
-# Logfile created on 2017-04-20 11:16:25 +0800 by logger.rb/56438
-I, [2017-04-20T11:33:03.066576 #16704]  INFO -- : OpenPage: Test Passed. Found the test string: 'login'.Actual Results match Expected Results.
-I, [2017-04-20T11:33:08.125082 #16704]  INFO -- : login: Test Passed. Found the test string: 'Home '.Actual Results match Expected Results.
-E, [2017-04-20T11:36:12.744542 #16796] ERROR -- : OpenPage: Test Failure, can't find checkpoint 'login'
-E, [2017-04-20T11:37:20.411308 #19160] ERROR -- : OpenPage: Test Failure, can't find checkpoint 'login'
-I, [2017-04-20T11:37:34.945762 #18856]  INFO -- : OpenPage: Test Passed. Found the test string: 'login'.Actual Results match Expected Results.
-I, [2017-04-20T11:37:39.856253 #18856]  INFO -- : login: Test Passed. Found the test string: 'Home '.Actual Results match Expected Results.
-I, [2017-04-20T11:43:56.136877 #19292]  INFO -- : OpenPage: Test Passed. Found the test string: 'login'.Actual Results match Expected Results.
-I, [2017-04-20T11:44:02.973560 #19292]  INFO -- : login: Test Passed. Found the test string: 'Home '.Actual Results match Expected Results.

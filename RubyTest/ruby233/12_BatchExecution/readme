@@ -1,0 +1,7 @@
+有两种方式来批量运行测试脚本：
+
+    1.使用Rake::TestTask方式，执行指定目录下的所有文件。这种方法不特别推荐，若需使用请百度。
+
+    2.执行指定的测试脚本，创建一个testSuite.rb脚本
+    
+参考：http://www.cnblogs.com/jiajia-autotesting/p/5710469.html

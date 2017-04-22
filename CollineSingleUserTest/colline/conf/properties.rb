@@ -31,15 +31,18 @@ $colline_database_jdbc_url= "changeit"
 #define httpwatch csv report field#
 $httpwatch_fieldList = "Started, Page Title, Page ID, Device Name, User Name, Time, Sent, Received, Method, Result, Type, URL, Render Start, DOM Load, HTTP Load, Page Load, Network, Cache Read"
 #httpwatch report location#
-$httpWatch_report = "D:\\workspace\\Ruby\\CollineSingleUserTest\\colline\\log"
+#$httpWatch_report = "D:\\workspace\\Ruby\\CollineSingleUserTest\\colline\\log"
+$httpWatch_report = "D:\\log"
 
 ###Automation Configuration###
 #Automation Server Address#
 $auto_server_ip
 #log location#
-$auto_log = "D:\\workspace\\Ruby\\CollineSingleUserTest\\colline\\log\\auto.log"
+#$auto_log = "D:\\workspace\\Ruby\\CollineSingleUserTest\\colline\\log\\auto.log"
+$auto_log = "D:\\auto.log"
 #Screenshot location
-$auto_screenshot = "D:\\workspace\\Ruby\\CollineSingleUserTest\\colline\\log"
+#$auto_screenshot = "D:\\workspace\\Ruby\\CollineSingleUserTest\\colline\\log"
+$auto_screenshot = "D:\\log"
 #Test data location#
 $auto_data = "changit"
 
