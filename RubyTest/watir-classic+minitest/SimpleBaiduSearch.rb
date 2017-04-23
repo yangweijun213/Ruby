@@ -1,6 +1,8 @@
 #-------------------------------------------------------------# 
-# 测试  watir timeout. 
-# ref http://www.rubydoc.info/gems/watir-classic/4.3.0/Watir/Wait 
+# Demo an example of baidu to show how to use watir-classic. 
+# Ruby23
+# Launch IE browser. 
+# install watir-classic (deprecated),不需要 browser driver
 #-------------------------------------------------------------# 
 
 require 'rubygems'    
@@ -23,8 +25,6 @@ browser.goto test_site
 #browser.text_field(:name=> "wd").set("test")
 browser.text_field(:name=> "wd").set Search_name
 
-Watir::Wait.until(10) { browser.button(:id=> "su1").exists? } #测试timeout
-
 # Clicking a button
 browser.button(:id=> "su").click
 
@@ -37,4 +37,4 @@ puts " Test Failed! Could not find: '#{Content} '."
 end
 
 #close ie
-browser.close
+#browser.close

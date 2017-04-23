@@ -37,4 +37,4 @@ puts " Test Failed! Could not find: '#{Content} '."
 end
 
 #close ie
-browser.close
+#browser.close

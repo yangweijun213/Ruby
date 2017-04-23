@@ -24,7 +24,7 @@ plugin.Clear()
 plugin.Record() 
 
 #open page
-ie.goto("http://www.runoob.com/")  
+ie.goto("http://www.baidu.com/")  
 
 # Stop recording
 plugin.Stop()
