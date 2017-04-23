@@ -1,27 +1,14 @@
+############################################################################
+#   主要为被测系统的元素集合，一个元素一个方法  #
+#   AgreementSearchCriteria元素   #
+############################################################################
 require 'rubygems'
-require 'win32ole'
 require 'watir-classic'  #watir和watir-classic不能同时存在
 
-#加载默认路径引入公共类
-require File.expand_path('../../../../core/utils/StringUtils',__FILE__)
-require File.expand_path('../../../../core/utils/LogUtils',__FILE__)
-
-
-#define class Agreement Search
 class AgreementSearchCriteria
-  def initialize (browser)
-    @browser = browser
-  end
-  
-  # test initial
-  def start ()
-    $logger = LogUtil.new().getlogger(@auto_log)
-    # Attach HttpWatch
-    $control = WIN32OLE.new('HttpWatch.Controller')
-    $plugin = $control.IE.Attach(@browser.ie)
-  end
-  
-  #go to Colline Agreement Search
+
+  #系统主页登陆地址
+  #元素名："url地址"
   def goto_agreement_search(transaction_name,checkpoint)
     $plugin.Clear()
     # Start recording

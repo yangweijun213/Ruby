@@ -5,7 +5,7 @@ require File.expand_path('../../conf/Properties',__FILE__)
 require File.expand_path('../../page/login/Login',__FILE__) 
 require File.expand_path('../../page/collateral/AgreementSearchCriteria',__FILE__) 
 
-module AgreementSearchBehaviour
+module SearchAgreementById
   
   # test initial
   def test_initial
