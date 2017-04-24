@@ -38,7 +38,7 @@ $testHostPwd = "password"
 #测试报告标题
 $testReportTitile ="AutoTestResults(#{Time.now.strftime("%m%d%H%M")})"
 #测试报告名
-$testReportName ="AutoTestResults(#{Time.now.strftime("%m%d%H%M")})"
+$testReportName ="AutoTestResults_#{Time.now.strftime("%m%d%H%M")}.html"
 #测试报告目录
 $testReportDir = "D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\testreport"
 #测试日至
@@ -46,7 +46,7 @@ $testLog = 'D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\log\\auto.log'
 #Screenshot
 $testScreenshot = 'D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\screenshot'
 #httpwatch结果
-$httpwatch_result = 'D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\httpwatch_result'
+$httpwatch_result = 'D:\\workspace\\Ruby\\ColSingleUserTest\\col\\testdata\\httpwatch_result'
 #define httpwatch csv report field#
 $httpwatch_fieldList = "Started, Page Title, Page ID, Device Name, User Name, Time, Sent, Received, Method, Result, Type, URL, Render Start, DOM Load, HTTP Load, Page Load, Network, Cache Read"
 

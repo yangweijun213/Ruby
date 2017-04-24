@@ -27,9 +27,9 @@ class SysLoginLogout
   end
   
   #判断是否登录成功
-#  def login_success_assert
-#    assert(colSys_logout_btn.when_present($waitTime).exist?,"登录失败，未跳转到home page")
-#  end
+  def login_success_assert
+    assert(colSys_logout_btn.when_present($waitTime).exist?,"登录失败，未跳转到home page")
+  end
   
   #如果Session already exists,登陆系统
   def login_session_already_exists
