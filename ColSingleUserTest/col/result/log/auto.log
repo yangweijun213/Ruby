@@ -10,3 +10,28 @@ E, [2017-04-24T18:11:57.035625 #24532] ERROR -- : login home page: 'timed out af
 E, [2017-04-24T18:14:11.111031 #26204] ERROR -- : login home page: 'undefined method `login_success_assert' for #<SysLoginLogout:0x3942930>
 Did you mean?  login_session_already_exists','["D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:25:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
 E, [2017-04-24T18:15:43.648284 #16784] ERROR -- : login home page: 'timed out after 10 seconds','["C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/wait.rb:29:in `until'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/element_extensions.rb:63:in `wait_until_present'", "D:/workspace/Ruby/ColSingleUserTest/service/action/SysLoginLogout.rb:21:in `login'", "D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:24:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+E, [2017-04-24T18:29:10.546940 #24580] ERROR -- : login home page: 'undefined method `login_success_assert' for #<SysLoginLogout:0x2bb7710>
+Did you mean?  login_session_already_exists','["D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:25:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+E, [2017-04-24T18:30:00.020887 #4124] ERROR -- : login home page: 'undefined method `login_success_assert' for #<SysLoginLogout:0x2c8f7e8>
+Did you mean?  login_session_already_exists','["D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:25:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+E, [2017-04-24T18:32:45.291413 #20640] ERROR -- : login home page: '(in OLE method `document': )
+    OLE error code:80004005 in <Unknown>
+      <No Description>
+    HRESULT error code:0x80020009
+      Exception occurred.','["C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/browser.rb:461:in `method_missing'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/browser.rb:461:in `document'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/element.rb:376:in `dispatch_event'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/input_elements.rb:358:in `block in type_by_character'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/input_elements.rb:374:in `each_char'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/input_elements.rb:374:in `characters_in'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/input_elements.rb:355:in `type_by_character'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/input_elements.rb:261:in `block in set'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/element.rb:489:in `perform_action'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/input_elements.rb:252:in `set'", "D:/workspace/Ruby/ColSingleUserTest/service/action/SysLoginLogout.rb:23:in `login'", "D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:24:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+I, [2017-04-24T18:32:57.734657 #19020]  INFO -- : login home page: Test Passed. 
+E, [2017-04-24T18:32:57.795663 #19020] ERROR -- : login home page: '(in OLE method `ExportFieldsAsCSV': )
+    OLE error code:80004005 in HttpWatch.Controller
+      Failed to save file 'D:\workspace\Ruby\ColSingleUserTest\col\result\testreport\httpwatch_result\login home page_20170424183254.csv' - The system cannot find the path specified.
+
+    HRESULT error code:0x80020009
+      Exception occurred.','["D:/workspace/Ruby/ColSingleUserTest/service/action/AutoHttpwatch.rb:23:in `method_missing'", "D:/workspace/Ruby/ColSingleUserTest/service/action/AutoHttpwatch.rb:23:in `after_transaction'", "D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:27:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+I, [2017-04-24T18:37:05.636444 #17080]  INFO -- : login_home_page: Test Passed. 
+E, [2017-04-24T18:37:05.706451 #17080] ERROR -- : login_home_page: '(in OLE method `ExportFieldsAsCSV': )
+    OLE error code:80004005 in HttpWatch.Controller
+      Failed to save file 'D:\workspace\Ruby\ColSingleUserTest\col\result\testreport\httpwatch_result\login_home_page_20170424183702.csv' - The system cannot find the path specified.
+
+    HRESULT error code:0x80020009
+      Exception occurred.','["D:/workspace/Ruby/ColSingleUserTest/service/action/AutoHttpwatch.rb:23:in `method_missing'", "D:/workspace/Ruby/ColSingleUserTest/service/action/AutoHttpwatch.rb:23:in `after_transaction'", "D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:27:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+I, [2017-04-24T18:39:36.473527 #26084]  INFO -- : login_home_page: Test Passed. 
+I, [2017-04-24T18:43:46.072484 #26052]  INFO -- : login_home_page: Test Passed. 

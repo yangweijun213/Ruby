@@ -41,8 +41,8 @@ class CollateralSearchAgmt
   end
   
   #断言 agreement_search_by_system_id
-  def assert_agmt_search_by_system_id
-    assert(agmt_search_by_system_id_field.when_present($waitTime).exist?,"失败，未找到SystemId")
-  end
+#  def assert_agmt_search_by_system_id
+#    assert(agmt_search_by_system_id_field.when_present($waitTime).exist?,"失败，未找到SystemId")
+#  end
   
 end
