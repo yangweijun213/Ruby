@@ -48,6 +48,17 @@ class BaiduTest < MiniTest::Test
      #assert(browser.button(:id=> "su").when_present(10).present?,"搜索失败，未跳转到指定页面")
      #断言元素2 exist- button元素是否存在
      assert(browser.button(:id=> "su").when_present(10).exist?,"搜索失败，未跳转到指定页面")
+     
+     #捕捉异常
+     begin
+       var=assert(browser.button(:id=> "su").when_present(10).exist?,"搜索失败，未跳转到指定页面")
+       puts "succssjeff"
+     rescue Exception => e
+       puts "errorjeff" 
+       puts e.message
+        puts e.backtrace.inspect
+     end
+
     
     #close ie
     browser.close

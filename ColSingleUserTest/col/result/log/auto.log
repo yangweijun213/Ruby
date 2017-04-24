@@ -1,0 +1,12 @@
+# Logfile created on 2017-04-24 18:05:39 +0800 by logger.rb/56438
+E, [2017-04-24T18:10:15.586909 #18424] ERROR -- : login home page: '(in OLE method `Record': )
+    OLE error code:0 in <Unknown>
+      <No Description>
+    HRESULT error code:0x80010108
+      The object invoked has disconnected from its clients.','["D:/workspace/Ruby/ColSingleUserTest/service/action/AutoHttpwatch.rb:17:in `method_missing'", "D:/workspace/Ruby/ColSingleUserTest/service/action/AutoHttpwatch.rb:17:in `before_transaction'", "D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:23:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+E, [2017-04-24T18:10:40.036909 #24248] ERROR -- : login home page: 'undefined method `login_success_assert' for #<SysLoginLogout:0x38a2778>
+Did you mean?  login_session_already_exists','["D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:25:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+E, [2017-04-24T18:11:57.035625 #24532] ERROR -- : login home page: 'timed out after 10 seconds','["C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/wait.rb:29:in `until'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/element_extensions.rb:63:in `wait_until_present'", "D:/workspace/Ruby/ColSingleUserTest/service/action/SysLoginLogout.rb:21:in `login'", "D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:24:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+E, [2017-04-24T18:14:11.111031 #26204] ERROR -- : login home page: 'undefined method `login_success_assert' for #<SysLoginLogout:0x3942930>
+Did you mean?  login_session_already_exists','["D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:25:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'
+E, [2017-04-24T18:15:43.648284 #16784] ERROR -- : login home page: 'timed out after 10 seconds','["C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/wait.rb:29:in `until'", "C:/Ruby23/lib/ruby/gems/2.3.0/gems/watir-classic-4.3.0/lib/watir-classic/element_extensions.rb:63:in `wait_until_present'", "D:/workspace/Ruby/ColSingleUserTest/service/action/SysLoginLogout.rb:21:in `login'", "D:/workspace/Ruby/ColSingleUserTest/service/module/Login.rb:24:in `login_home'", "D:/workspace/Ruby/ColSingleUserTest/col/testcase/test6.rb:28:in `<main>'"]'

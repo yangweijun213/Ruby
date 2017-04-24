@@ -10,3 +10,6 @@ end
 
 test = DateTimeClass.new()
 puts test.getTimeStamp()
+
+#错误
+#puts getTimeStamp()

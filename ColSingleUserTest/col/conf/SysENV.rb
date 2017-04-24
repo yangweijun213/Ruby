@@ -15,13 +15,17 @@ $colSysVersionNum = "15.0.0.0"
 #获取当前时间
 $curr_time = Time.now.strftime("%Y%m%d%H%M%S")
 #工程项目
-$projectDir = File.expand_path(",", _FILE_).scan(/.eeee/).join(',')
+
 #Colline system url#
-$colUrl= "http://54.193.33.252:8080/colline/"
+$colUrl= "http://172.20.20.90:8080/colline/"
 #Colline system username#
 $colUsrName = "sa"
 #Colline system password#
 $colPwd = "password"
+#等待元素出现的超时时间
+$waitTime = 10
+#等待加载
+$sleepTime = 2
 
 #=========================Test Server================#
 
@@ -33,18 +37,18 @@ $testHostName = "172.20.20.10"
 $testHostPwd = "password"
 #测试报告标题
 $testReportTitile ="AutoTestResults(#{Time.now.strftime("%m%d%H%M")})"
+#测试报告名
+$testReportName ="AutoTestResults(#{Time.now.strftime("%m%d%H%M")})"
 #测试报告目录
-$testReportDir = "F:\\yangweijun\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\testreport"
-#测试日志
-$testLog = 'F:\yangweijun\workspace\Ruby\ColSingleUserTest\col\result\log'
+$testReportDir = "D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\testreport"
+#测试日至
+$testLog = 'D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\log\\auto.log'
 #Screenshot
-$testScreenshot = 'F:\yangweijun\workspace\Ruby\ColSingleUserTest\col\result\screenshot'
+$testScreenshot = 'D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\testreport\\screenshot'
 #httpwatch结果
-$httpwatch_result = 'F:\yangweijun\workspace\Ruby\ColSingleUserTest\col\result\httpwatch_result'
+$httpwatch_result = 'D:\\workspace\\Ruby\\ColSingleUserTest\\col\\result\\testreport\\httpwatch_result'
 #define httpwatch csv report field#
 $httpwatch_fieldList = "Started, Page Title, Page ID, Device Name, User Name, Time, Sent, Received, Method, Result, Type, URL, Render Start, DOM Load, HTTP Load, Page Load, Network, Cache Read"
-#等待元素出现的超时时间
-$timeout = 10
 
 #=========================Colline App Server================#
 #应用服务器的主机IP
