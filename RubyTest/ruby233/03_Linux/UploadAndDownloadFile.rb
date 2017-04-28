@@ -1,5 +1,5 @@
 # http://rubyer.me/blog/1133/
-# windows上传文件到linux,  从linux上下载文件到windows (上传和下载一个目录，包括子目录中的所有文件。加上“:recursive => true”参数)
+# windows上传文件到linux,  从linux上下载文件到windows (不需要执行命令，仅仅是传输文件)
 
 require 'net/ssh'
 require 'net/scp'
