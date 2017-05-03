@@ -9,6 +9,6 @@ require 'watir-classic'  #watir和watir-classic不能同时存在
   #系统注销按钮
   #元素名："用户输入框"
   def colSys_logout_btn
-    @browser.div(:text => "Collateral", :id => "oM_m1")
+    @browser.div(:text => "Logout", :id => "oM_m1")
   end
   

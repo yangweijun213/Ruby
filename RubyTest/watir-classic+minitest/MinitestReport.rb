@@ -12,7 +12,7 @@ require 'minitest/reporters'
 #测试报告标题
 $testReportTitle = "AutoTestResults(#{Time.now.strftime("%m%d%H%M")})"
 #测试报告目录
-$testReportDir = 'F:\yangweijun\workspace\Ruby\RubyTest\watir-classic(deprecated)'
+$testReportDir = 'D:\minitest'
 
 #使用HTML报告，默认路径是在项目根目下生成Test目录，下面放html报告
 #Minitest::Reporters.use! [Minitest::Reporters::HtmlReporter.new] 

@@ -4,7 +4,6 @@ class Query
   #直接执行一个DML语句
   #参数：sql语句，conn连接参数
   def executeDML (conn,sql)
-    
   end
   
   #删除数据

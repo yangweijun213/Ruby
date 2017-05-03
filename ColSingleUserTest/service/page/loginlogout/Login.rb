@@ -27,7 +27,6 @@ require 'watir-classic'  #watir和watir-classic不能同时存在
   #系统输入正确账号和密码,Session already exists返回信息
   #元素名："页面标题"
   def login_session_already_exists_title
-    #$browser.title == "Session already exists"
     @browser.title
   end
 

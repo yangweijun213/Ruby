@@ -1,0 +1,9 @@
+Started,Page Title,Page ID,Device Name,User Name,Time,Sent,Received,Method,Result,Type,URL,Render Start,DOM Load,HTTP Load,Page Load,Network,Cache Read
+,Session already exists,1,SHA-LRI-PC-155,jeff yang,0.233,2208,2403,,,,,,(N/A),0.233,(N/A),,
+2017-05-03 18:06:17.123000,,1,SHA-LRI-PC-155,jeff yang,0.041,643,207,POST,302,Redirect to http://172.20.20.90:8080/colline/index.do?j_winname=colline845690055612420500a,http://172.20.20.90:8080/colline/j_security_check,,,,,(N/A),(N/A)
+2017-05-03 18:06:17.164000,,1,SHA-LRI-PC-155,jeff yang,0.006,519,454,GET,302,Redirect to http://172.20.20.90:8080/colline/index.do?j_winname=colline845690055612420500a,http://172.20.20.90:8080/colline/index.do?j_winname=colline845690055612420500a,,,,,(N/A),(N/A)
+2017-05-03 18:06:17.169000,,1,SHA-LRI-PC-155,jeff yang,0.004,519,462,GET,302,Redirect to http://172.20.20.90:8080/colline/stealSession.jsp?j_winname=colline845690055612420500a,http://172.20.20.90:8080/colline/index.do?j_winname=colline845690055612420500a,,,,,(N/A),(N/A)
+2017-05-03 18:06:17.174000,,1,SHA-LRI-PC-155,jeff yang,0.165,527,1280,GET,200,html,http://172.20.20.90:8080/colline/stealSession.jsp?j_winname=colline845690055612420500a,,,,,(N/A),(N/A)
+2017-05-03 18:06:17.343000,,1,SHA-LRI-PC-155,jeff yang,0.002,0,0,GET,(Cache),javascript,http://172.20.20.90:8080/colline/lrsux/com/lombardrisk/infrastructure/release/core/lrsux.min.js,,,,,(N/A),(N/A)
+2017-05-03 18:06:17.347000,,1,SHA-LRI-PC-155,jeff yang,0.002,0,0,GET,(Cache),css,http://172.20.20.90:8080/colline/common/styles/content.css,,,,,(N/A),(N/A)
+2017-05-03 18:06:17.355000,,1,SHA-LRI-PC-155,jeff yang,0.001,0,0,GET,(Cache),javascript,http://172.20.20.90:8080/colline/common/script/browserVer.js,,,,,(N/A),(N/A)
