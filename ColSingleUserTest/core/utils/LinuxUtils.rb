@@ -27,18 +27,18 @@ class LinuxUtils
     end
   end
 
-  #从windows上传文件夹和子文件夹到Linux
+  #从Linux下载文件夹和子文件夹到Windows
   #参数：host主机名，user 用户名，pwd密码, source_file Linux上文件的位置，windows上的位置
-  def download_file_from_linux (host,user,pwd,linux_folder,windows_folder)
+  def download_folder_subfolder_from_linux (host,user,pwd,linux_folder,windows_folder)
     Net::SCP.start( host, user, :password => pwd ) do |scp|
-      scp.download!( '#{linux_file}', '#{windows_folder}',:recursive => true )
+      scp.download!( '#{linux_folder}', '#{windows_folder}',:recursive => true )
     end
   end
 
-  #从Linux上下载文件夹和子文件夹到windows
+  #从windows上传文件夹和子文件夹到Linux
   def upload_file_to_linux (host,user,pwd,windows_folder,linux_folder)
     Net::SCP.start( host, user, :password => pwd ) do |scp|
-      scp.upload!( '#{windows_file}', '#{linux_folder}',:recursive => true)
+      scp.upload!( '#{windows_folder}', '#{linux_folder}',:recursive => true)
     end
   end
 end

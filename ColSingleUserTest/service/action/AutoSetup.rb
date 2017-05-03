@@ -10,6 +10,7 @@ require 'watir-classic'  #watir和watir-classic不能同时存在
 #加载默认路径引入公共类
 require File.expand_path('../../../core/utils/LogUtils',__FILE__)
 require File.expand_path('../../../core/utils/TestDataUtils',__FILE__) 
+require File.expand_path('../../../core/utils/LinuxUtils',__FILE__) 
 
 class AutoSetup
   def initialize (browser)
@@ -40,28 +41,39 @@ class AutoSetup
     return data
   end
   
+  #launch Colline
+  def launch_colline (host,user,pwd,shell_script)
+    LinuxUtils.new().execute_shell(host,user,pwd,shell_script)
+  end
+  
   #clean oracle AWR snapshot
-  def clean_AWR_snapshot
+  def clean_awr_snapshot (host,user,pwd,shell_script)
+    LinuxUtils.new().execute_shell(host,user,pwd,shell_script)
   end
   
   #clean oracle ASH snapshot
-  def clean_ash_snapshot
+  def clean_ash_snapshot (host,user,pwd,shell_script)
+    LinuxUtils.new().execute_shell(host,user,pwd,shell_script)
   end
     
   #start oracle AWR
-  def start_awr
+  def start_awr (host,user,pwd,shell_script)
+    LinuxUtils.new().execute_shell(host,user,pwd,shell_script)
   end
     
   #start oracle ASH
-  def start_ash
+  def start_ash (host,user,pwd,shell_script)
+    LinuxUtils.new().execute_shell(host,user,pwd,shell_script)
   end
      
   #start Dynatrace monitor
-  def start_dynamic
+  def start_dynatrace (host,user,pwd,shell_script)
+    LinuxUtils.new().execute_shell(host,user,pwd,shell_script)
   end
   
   #start threaddump
-  def start_threaddump
+  def start_threaddump (host,user,pwd,shell_script)
+    LinuxUtils.new().execute_shell(host,user,pwd,shell_script)
   end
   
   #clean app server download report

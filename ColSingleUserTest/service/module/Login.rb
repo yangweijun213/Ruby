@@ -23,11 +23,11 @@ class Login
     begin
       @autohttpwatch.before_transaction()
       @sysloginlogout.login(username,password)
-      if @sysloginlogout.login_success_assert()
-        $logger.info("#{transaction_name}: Test Passed. ")
-      else
-        $logger.error(" Test Failed! '#{transaction_name} '.")
-      end
+#      if @sysloginlogout.login_success_assert()
+#        $logger.info("#{transaction_name}: Test Passed. ")
+#      else
+#        $logger.error(" Test Failed! '#{transaction_name} '.")
+#      end
       @autohttpwatch.after_transaction(httpwatch_result,transaction_name,curr_time,httpwatch_fieldList)
     rescue Exception => e
       $logger.error("#{transaction_name}: '#{e.message}','#{e.backtrace.inspect}'")

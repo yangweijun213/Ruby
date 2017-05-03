@@ -18,19 +18,23 @@ class AutoTearDown
   end
   
   #collect appserver logs, env config,datavolumn
-  def collect_appserver
+  def collect_appserverlog (host,user,pwd,linux_folder,windows_folder)
+    LinuxUtils.new().download_folder_subfolder_from_linux(host,user,pwd,linux_folder,windows_folder)
   end
   
   #collect appserver threaddump
-  def collect_appserver_threaddump
+  def collect_appserver_threaddump (host,user,pwd,linux_folder,windows_folder)
+    LinuxUtils.new().download_folder_subfolder_from_linux(host,user,pwd,linux_folder,windows_folder)
   end
   
   #collect oracle AWR 
-  def collect_oracle_AWR
+  def collect_oracle_AWR (host,user,pwd,linux_file,windows_folder)
+    LinuxUtils.new().download_file_from_linux(host,user,pwd,linux_file,windows_folder)
   end
   
   #collect oracle ASH
-  def collect_oracle_ASH
+  def collect_oracle_ASH (host,user,pwd,linux_file,windows_folder)
+    LinuxUtils.new().download_file_from_linux(host,user,pwd,linux_file,windows_folder)
   end
   
 end
