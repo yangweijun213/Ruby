@@ -2,6 +2,7 @@
 begin
   result=20/0
   puts result            #没有使用raise 语句抛出
+  puts "continue"
 rescue Exception => e #处理错误 
   puts e.message
   puts e.backtrace.inspect
