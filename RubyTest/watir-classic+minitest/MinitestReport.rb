@@ -58,7 +58,7 @@ class BaiduTest < MiniTest::Test
     
      #断言元素1 present- button元素是否存在
      #assert(browser.button(:id=> "su").when_present(10).present?,"搜索失败，未跳转到指定页面")
-     #断言元素2 exist- button元素是否存在
+     #断言元素2 exist- button元素是否存在  (如果使用异常的话，报告就不会显示错误了)
      assert(browser.button(:id=> "su").when_present(10).exist?,"搜索失败，未跳转到指定页面")
     
     #close ie

@@ -23,10 +23,12 @@ class Login
     begin
       @autohttpwatch.before_transaction()
       @sysloginlogout.login(username,password)
-#      if @sysloginlogout.login_success_assert()
-#        $logger.info("#{transaction_name}: Test Passed. ")
+#      checkpoint = "Home"
+#      if @sysloginlogout.login_success_assert(checkpoint)
+#        $logger.info("#{transaction_name}: Test Passed. Found the test string: '#{checkpoint} '.Actual Results match Expected Results. ") 
 #      else
-#        $logger.error(" Test Failed! '#{transaction_name} '.")
+#        $logger.error("#{transaction_name}: Test Failed! Could not find: '#{checkpoint} '.")
+#        @browser.screenshot.save "#{$testScreenshot}/#{transaction_name}_#{$curr_time}.png"
 #      end
       @autohttpwatch.after_transaction(httpwatch_result,transaction_name,curr_time,httpwatch_fieldList)
     rescue Exception => e

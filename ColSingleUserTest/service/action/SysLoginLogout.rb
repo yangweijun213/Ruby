@@ -27,9 +27,8 @@ class SysLoginLogout
   end
   
   #判断是否登录成功
-  def login_success_assert
-    #assert(colSys_logout_btn.when_present($waitTime).exist?,"登录失败，未跳转到home page")
-    boolean = @browser.text.include? "Home"
+  def login_success_assert (checkpoint)
+    boolean = @browser.text.include? "#{checkpoint}"
     return boolean
   end
   

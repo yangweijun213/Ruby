@@ -13,9 +13,10 @@ pass = 'pst@1234'
 Net::SSH.start( host, user, :password => pass ) do |ssh|
     #执行shell
     #result = ssh.exec!"./jeff/Shell/testSet.sh"
+    result = ssh.exec!"./server/colline/standalone/RELEASE_13_0_0_SP17/bin/launch.sh"
    
     #执行 pwd
-     result = ssh.exec!"pwd"
+    #result = ssh.exec!"pwd"
     # result = ssh.exec!('pwd')
     
     puts result
